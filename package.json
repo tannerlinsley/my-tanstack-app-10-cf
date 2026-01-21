@@ -1,0 +1,45 @@
+{
+  "name": "my-tanstack-app-10-cf",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite dev --port 3000",
+    "build": "vite build",
+    "start": "node .output/server/index.mjs",
+    "preview": "npm run build && vite preview",
+    "deploy": "npm run build && wrangler deploy",
+    "cf-typegen": "wrangler types",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:studio": "drizzle-kit studio"
+  },
+  "dependencies": {
+    "@tanstack/react-router": "^1.132.0",
+    "@tanstack/react-router-devtools": "^1.132.0",
+    "@tanstack/react-start": "^1.132.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "vite-tsconfig-paths": "^5.1.4",
+    "lucide-react": "^0.468.0",
+    "drizzle-orm": "^0.38.0",
+    "postgres": "^3.4.0",
+    "@neondatabase/serverless": "^1.0.0",
+    "@sentry/react": "^8.47.0",
+    "@workos-inc/authkit-react": "^0.13.0",
+    "zod": "^4.1.11"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.4.1",
+    "vite": "^7.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.7.0",
+    "@tailwindcss/vite": "^4.0.0",
+    "tailwindcss": "^4.0.0",
+    "@cloudflare/vite-plugin": "^1.0.0",
+    "wrangler": "^4.0.0",
+    "drizzle-kit": "^0.30.0",
+    "@neondatabase/vite-plugin-postgres": "^0.5.0",
+    "@sentry/vite-plugin": "^2.22.0"
+  }
+}

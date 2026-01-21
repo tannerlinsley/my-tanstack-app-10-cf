@@ -1,0 +1,7 @@
+name = "my-tanstack-app-10-cf"
+compatibility_date = "2025-01-01"
+compatibility_flags = ["nodejs_compat"]
+main = "@tanstack/react-start/server-entry"
+
+[observability]
+enabled = true
