@@ -1,6 +1,6 @@
 import { neon } from '@neondatabase/serverless'
 
-let client: ReturnType<typeof neon> | null = null
+let client: ReturnType<typeof neon<false, false>> | null = null
 
 export function getClient() {
   if (!client) {
